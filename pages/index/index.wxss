@@ -1,0 +1,240 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  font-family: "PingFang SC","Microsoft Yahei",Arial, Helvetica, sans-serif;
+}
+
+/*view,text,image{  border:1px #988 solid;}*/
+.n{
+  display: none;
+}
+
+.page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/******header部分******/
+.header{
+  height: 60px; 
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px #eee solid;
+}
+
+.header-icon{ 
+  flex: 1; 
+  padding:10px 10px;
+}
+
+.header-content{ 
+  line-height: 60px;
+  flex:4; 
+  margin-left: 20px;
+}
+ 
+.header-switch{
+  color:#f00;
+  margin-left: 10px;
+}
+
+.content{
+  height: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: row;
+}
+
+/******左侧分类******/
+.left{
+  width:30%; 
+  background-color: #eee;
+}
+
+.left-active{
+  color:#f00;
+  background-color: #fff;
+  border-left: 6px #f00 solid;
+}
+
+.menu-item{
+  padding:10px 10px;
+  border-bottom: 1px #d4d4d4 solid;
+}
+
+/******右侧list******/
+.right{
+  flex: 1;
+  padding-bottom: 50px;
+}
+
+.p-item{ 
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1px #eaeaea solid;
+}
+
+.p-icon{
+}
+
+.p-content{  
+  flex:1;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.p-name{
+  color:#000;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.p-remark{
+  color:#777;
+  font-size: 12px;
+}
+
+.p-count{
+  color:#555;
+  font-size: 12px;
+}
+
+.p-price{
+  color:#f00;
+  font-size: 14px;
+}
+
+/******底部******/
+.bottom{
+  position: fixed; 
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  border-top: 1px #eee solid;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-left{
+  color:#000;
+  background-color: #fff;
+  padding:8px 8px;
+  display: flex;
+  flex:3;
+}
+
+.bottom-icon{
+  margin: auto 0;
+}
+
+.bottom-price{
+  color:#f00;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 5px; 
+  padding:5px 10px;
+  border-right: 1px #d8d8d8 solid;
+}
+
+.bottom-remark{
+  color:#555;
+  font-size: 14px;
+  padding:5px 5px;
+  margin-left: 10px;
+}
+
+.bottom-right{
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  color:#fff;
+  background-color: #ccc;
+}
+
+.bottom-ok{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******购物车******/
+.cart{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom:51px;
+}
+
+.cart-top{
+  height: 50%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.cart-content{ 
+  height: 50%;
+  background-color: #f7f7f7; 
+}
+.cart-header{ 
+  padding:8px;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+  display: flex;
+  flex-direction: row;
+}
+.cart-header-label{
+  flex:1;
+  color:#555;
+  font-size: 14px;
+  padding-left: 5px;
+  border-left: 5px #f00 solid; 
+}
+.cart-header-clear{
+  display: flex;
+}
+.cart-header-clear-txt{
+  margin: 0px 8px;
+  color:#555;
+  font-size: 14px;
+}
+ 
+.cart-list{  
+  height: 80%;
+  background-color: #fff;
+}
+.cart-item{
+  display: flex;
+  flex-direction: row;
+  padding:12px 8px;
+  border-bottom: 1px #ccc solid;
+}
+.cart-item-name{
+  color:#000;
+  font-size: 12px;
+  flex: 1;
+  display: flex; 
+  align-items: center;
+}
+.cart-item-info{
+  display: flex; 
+}
+.cart-item-operator{
+  margin: auto 10px;
+}
+.cart-item-price{ 
+  color:#f00;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-item-count{
+  color:#000;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,124 @@
+
+.page{ 
+    width:100%;
+    font-family: "PingFang SC","Microsoft Yahei",Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+}
+
+ view,image,text{
+     /*border: 1px #f00 solid;*/
+ }
+
+/**图片区**/
+.page-header{ 
+    position: relative;
+}
+
+.swiper-image{
+   width:100%; 
+   height: 100%; 
+}
+
+.header-info{
+    position: absolute; 
+    bottom:0;
+    width:100%;
+    padding: 20rpx 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row; 
+}
+ 
+ 
+
+/**name区**/
+.page-title-wrap{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0 30rpx 10rpx;
+    border-bottom: 1px #d6d6d6 solid;
+}
+.page-title{ 
+    color:#333;
+    font-size: 16px;
+    margin: 30rpx 0;
+}
+.page-title-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.page-title-price{
+    flex:1;
+    color:#f00;
+    font-size: 24px; 
+}
+ 
+.page-yuyue{
+     padding: 0 20rpx;
+}
+
+.page-yuyue-btn{ 
+    color:#eee;
+    font-size: 14px;    
+    background-color: #e84445;
+}
+.btn-hover{
+    background-color: #e84445;
+    opacity: 0.7;
+} 
+
+
+/**介绍区**/
+.page-intro{ 
+    margin-top: 20px;
+    background-color: #fff;
+    border-bottom: 1px #eaeaea solid;
+    padding:12px; 
+    display: flex;
+    flex-direction: row;
+}
+ 
+.intro-left{
+    flex:1;
+}
+
+.intro-text{
+    color:#555;
+    font-size:16px;
+    margin-left: 6px;
+}
+
+/**评价**/
+.page-remark{
+    background-color: #fff;
+    padding:12px;
+}
+
+.remark-header-label{
+    color:#333;
+    font-size: 14px;
+}
+.remark-header-txt{
+    color:#555;
+    font-size: 12px;
+}
+
+/**单条评价**/
+.remark-item{
+    display: flex;
+    flex-direction: row;
+    padding:12px 0;
+    border-bottom: 1px #eaeaea dotted;
+}
+.remark-item-content{
+    flex:1;
+    color:#555;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.remark-item-time{
+    color:#555;
+    font-size: 12px;
+}

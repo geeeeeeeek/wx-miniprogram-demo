@@ -1,0 +1,89 @@
+<view class="page">
+    <!--顶部图片区-->
+    <view class="page-header">   
+        <swiper> 
+            <swiper-item>
+                <image src="/images/h1.png" mode="aspectFill" class="swiper-image"  />
+            </swiper-item>   
+        </swiper> 
+    </view>
+    <!--中间-->
+    <view class="page-title-wrap"> 
+        <view class="page-title cc fw-600 ">e家政2小时普通清洁服务</view>
+        <view class="page-title-bottom">
+            <text class="page-title-price">￥100</text>
+            <view class="page-yuyue">
+                <button class="page-yuyue-btn" hover-class="btn-hover">立刻预约</button>
+            </view>
+        </view>
+    </view>
+
+    <!--项目介绍-->
+    <view class="page-intro">   
+        <view class="intro-left vc">
+                <image style="width: 20px; height:20px;"  src="/images/icon_pname.png"></image>
+                <text class="intro-text fw-600">e家政-北京店</text>
+        </view>
+        <view class="vc">
+            <image style="width: 20px; height:20px;"  src="/images/icon_phone.png"></image>
+            <text class="intro-text fw-600">联系电话</text>
+        </view> 
+    </view>
+
+    <!--评价-->
+    <view class="page-remark">
+        <view>
+            <text class="remark-header-label">服务评价</text>
+            <text class="remark-header-txt">（共15人评价）</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">很棒,不错的家政服务</text>
+            <text class="remark-item-time">12-22 8:13</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">清洗的很干净！</text>
+            <text class="remark-item-time">12-12 11:11</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">不错的服务，下次还约</text>
+            <text class="remark-item-time">12-11 5:33</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">服务的人员很干练</text>
+            <text class="remark-item-time">12-10 6:41</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">服务的人员很干练</text>
+            <text class="remark-item-time">12-10 6:41</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">服务的人员很干练</text>
+            <text class="remark-item-time">12-10 6:41</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">服务的人员很干练</text>
+            <text class="remark-item-time">12-10 6:41</text>
+        </view>
+        <!--一条评价-->
+        <view class="remark-item vc">
+            <image src="/images/remark_icon.jpg" style="width:20px;height:20px;border-radius:10px;"></image>
+            <text class="remark-item-content">服务的人员很干练</text>
+            <text class="remark-item-time">12-10 6:41</text>
+        </view>
+    </view>
+
+</view>

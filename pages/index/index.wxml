@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="header">
+  <view class="header-icon">
+    <image class="" src="/images/icon_app.jpg" style="width:40px;height:40px;border-radius:20px;"></image>
+  </view>
+  <view class="header-content">
+    <text class="header-name">{{shopInfo.shopName}}</text>
+    <text class="header-switch" bindtap="switchPlace">[详情]</text>
+  </view> 
+  </view>
+  <view class="content">
+    <!--分类-->
+    <view class="left">
+      <block wx:for-items="{{cates}}" wx:for-item="item">
+        <block wx:if="{{item.active==1}}">
+          <view class="menu-item left-active" data-id="{{item.cateId}}" bindtap="menuClick">{{item.cateName}}</view>
+        </block>
+        <block wx:else>
+          <view class="menu-item" data-id="{{item.cateId}}" bindtap="menuClick">{{item.cateName}}</view>
+        </block> 
+      </block> 
+    </view>
+    <scroll-view class="right" scroll-y="true">
+      <block wx:for-items="{{products}}" wx:for-item="product">
+          <!--一条记录-->
+          <view class="p-item" bindtap="itemClick">
+            <view class="p-icon">
+            <image class="" src="/images/111.jpg" style="width:80px;height:80px;border-radius:2px;" mode="aspectFit"></image>
+            </view>
+            <view class="p-content">
+            <text class="p-name">{{product.pName}}</text>
+            <text class="p-remark">{{product.pRemark}}</text>
+            <text class="p-count">销量{{product.pSales}}笔</text>
+            <text class="p-price">￥{{product.price}}</text>
+            </view>
+          </view>
+      </block>
+        
+    </scroll-view>
+  </view>
+
+  <!--底部-->
+  <view class="bottom">
+    <view class="bottom-left" bindtap="switchCart">
+      <image class="bottom-icon" src="/images/icon_buy.png" style="width:24px;height:24px;"></image>
+      <text class="bottom-price">￥10</text>
+      <text class="bottom-remark">已选2份</text>
+    </view>
+    
+    <view class="bottom-right" bindtap="ok">
+      <text class="bottom-ok" >1元上门</text>
+    </view>
+  </view>
+
+  <!--购物车--> 
+  <view class="cart {{cartStatus}}">
+    <view class="cart-top" bindtap="switchCart"></view>
+    <view class="cart-content">
+      <view class="cart-header">
+        <text class="cart-header-label">购物车</text>
+        <view class="cart-header-clear">
+          <image class="" src="/images/icon_buy_clear.png" style="width:18px;height:18px;"></image>
+          <text class="cart-header-clear-txt">清空</text>
+        </view>
+      </view> 
+        <scroll-view class="cart-list" scroll-y="true">  
+          <!--一条-->
+          <view class="cart-item">
+            <view class="cart-item-name">2小时家庭保洁</view>
+            <view class="cart-item-info">
+                <text class="cart-item-price">￥10</text>
+                <image class="cart-item-operator" src="/images/del.png" style="width:24px;height:24px;"></image>
+                <text class="cart-item-count">3</text>
+                <image class="cart-item-operator" src="/images/add.png" style="width:24px;height:24px;"></image>
+            </view>
+          </view>
+          <!--一条-->
+          <view class="cart-item">
+            <view class="cart-item-name">3小时家庭保洁</view>
+            <view class="cart-item-info">
+                <text class="cart-item-price">￥20</text>
+                <image class="cart-item-operator" src="/images/del.png" style="width:24px;height:24px;"></image>
+                <text class="cart-item-count">3</text>
+                <image class="cart-item-operator" src="/images/add.png" style="width:24px;height:24px;"></image>
+            </view>
+          </view>
+ 
+        </scroll-view> 
+    </view>
+  </view>
+</view>
+
+
