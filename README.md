@@ -6,4 +6,4 @@
 
 ![家政详情](http://jiazheng-1251321133.costj.myqcloud.com/222.jpg)  
 
-* 如有问题，可联系微信：java2048
+小程序练手学习项目，哈哈
